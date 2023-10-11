@@ -1,0 +1,52 @@
+.job {
+    padding: 0 1.5rem;
+    
+    &__title {
+        padding-bottom: 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    &__date {
+        display: block;
+        color: $accent-color;
+    }
+
+    &__company {
+        padding-bottom: 1rem;
+    }
+
+    &__description {
+        padding-bottom: 1rem;
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+
+    &__missions {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    &__mission {
+        background-color: $secondary-color;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+    }
+
+    &__mission-title {
+        margin-bottom: 0.2rem;
+    }
+
+    &__mission-tools {
+        margin-bottom: 1rem;
+        font-size: 0.9rem;
+        color: $accent-color;
+    }
+
+    &__mission-description {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+}

@@ -1,0 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: auto;
+    min-height: 100vh;
+    max-width: 639px;
+}
+
+.body--no-scroll {
+    overflow: hidden !important;
+}

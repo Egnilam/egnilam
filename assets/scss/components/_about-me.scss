@@ -1,0 +1,60 @@
+.about-me {
+    @include scroll-margin;
+    display: grid;
+    grid-template-areas:
+    "title"
+    "guideline"
+    "text"
+    "photo";
+    row-gap: 2rem;
+    margin-top: 2.5rem;
+    
+    &--highlight {
+        font-weight: 600;
+        color: $accent-color;
+    }
+
+    &__title {
+        grid-area: title;
+        padding: 0 2.5rem;
+        font-size: 3rem;
+        font-weight: 800;
+        text-transform: capitalize;
+        color: $accent-color;
+    }
+
+    &__guideline {
+        grid-area: guideline;
+        padding: 0 2.5rem;
+
+    }
+
+    &__text-container {
+        grid-area: text;
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        padding: 0 2.5rem;
+    }
+
+    &__text {
+        font-size: 0.7rem;
+    }
+
+    &__photo-container {
+        grid-area: photo;
+        width: 100%;
+        background-color: $secondary-color;
+        line-height: 0;
+        padding: 2rem 0;
+    }
+
+    &__photo {
+        display: block;
+        height: 199px;
+        width: 210px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 6px;
+    }
+}

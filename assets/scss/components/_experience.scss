@@ -1,0 +1,11 @@
+.experience {
+    @include scroll-margin;
+    display: grid;
+    row-gap: 2.5rem;
+    padding: 2.5rem 0;
+
+    &__title {
+        font-size: 1.5rem;
+        padding: 0 2.5rem;
+    }
+}

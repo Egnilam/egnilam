@@ -1,0 +1,71 @@
+.navbar {
+    z-index: 998;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: calc(100vw - 6rem);
+    height: calc(100vh - 10rem);
+    padding: 5rem 3rem;
+    background-color: $secondary-color;
+    font-size: 1.25rem;
+    visibility: hidden;
+    opacity: 0;     
+    pointer-events: none;
+
+    @include sm {
+        position: relative;
+        top: inherit;
+        left: auto;
+        right: auto;
+        bottom: auto;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        padding: 0;
+        visibility: visible;
+        opacity: 1;     
+        pointer-events: auto;
+    }
+
+    &--visible {
+        visibility: visible;
+        opacity: 1;     
+        pointer-events: auto;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    &__list {
+        line-height: 2.5;
+        @include sm {
+            display: inline-flex;
+            align-items: center;
+        }
+    }
+
+    &__link {
+        @include reset-link;
+        text-transform: capitalize;
+
+        @include sm {
+            padding: 0.5rem 1rem;
+        }
+    }
+
+    &__contact {
+        @include sm {
+            display: none;
+        }
+    }
+    
+    &__label {
+        letter-spacing: 0.15rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $accent-color;
+    }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Florian Malinge backend developer">
+    <title>Florian Malinge | Egnilam.fr</title>
+    <link rel="stylesheet" href="./assets/css/style.css" defer>
+</head>
+
+<body>
+    <header class="header">
+        <a class="header__link" href="#">
+            <img class="header__logo" src="./assets/img/logo.svg" alt="Logo">
+        </a>
+        <button aria-label="navbar-toggle" class="header__btn" data-controller="navbar-toggle">
+            <svg class="header__btn-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: #D8B87D;transform: ;msFilter:;">
+                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+        </button>
+        <nav id="navbar" class="navbar">
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#about-me" data-nav="about-me">à propos de moi</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#experience" data-nav="experience">expérience</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#education" data-nav="education">étude</a>
+                </li>
+            </ul>
+            <div class="navbar__contact">
+                <span class="navbar__label">Me contacter</span>
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="mailto:malinge.florian@gmail.com">Email</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="https://www.linkedin.com/in/malingeflorian/"
+                            target="_blank">Linkedin</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="https://github.com/Egnilam" target="_blank">Github</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section id="about-me" class="about-me">
+            <h1 class="about-me__title">Backend <br> developer.</h1>
+            <p class="about-me__guideline">J'intègre votre <span class="about-me--highlight">métier</span> dans vos applications.</p>
+            <div class="about-me__text-container">
+                <p class="about-me__text">Construisons ensemble une architecture logicielle solide.</p>
+                <p class="about-me__text">Développons la culture métier/technique.</p>
+            </div>
+            <div class="about-me__photo-container">
+                <img class="about-me__photo" src="./assets/img/me.webp" alt="It's me !">
+            </div>
+        </section>
+        <section id="experience" class="experience">
+            <h2 class="experience__title">Mon expérience</h2>
+            <div class="job">
+                <div class="job__position">
+                    <h3 class="job__title">Lead développeur <span class="job__date">août 2020 à mai 2023</span></h3>
+                    <p class="job__company">Groupe Win'up, Rennes | Banque &amp; Assurance</p>
+                    <p class="job__description">Mon rôle était tout autant technique que relationnel. <br> Pour la
+                        partie relationnelle, ça allait de l'animation de comités métier, à la formation des
+                        utilisateurs, tout en passant par l'accompagnement des prestataires externes.
+                        <br>Pour la partie technique, du choix des technologies à la mise en place des architectures
+                        logicielles, jusqu'à la maintenance et l'évolution des applications.</p>
+                </div>
+                <div class="job__missions">
+                    <div class="job__mission">
+                        <p class="job__mission-title">Création d'un outil d'aide à la décision</p>
+                        <p class="job__mission-tools">PHP 8.2, Symfony 6.2, Symfony live component,
+                            Meilisearch</p>
+                        <p class="job__mission-description">Un outil permettant l'enregistrement de toutes les règles
+                            bancaires liées aux prêts. Permettant l'envoi d'un dossier depuis un CRM, afin que ce
+                            dernier soit analysé et vérifier sa faisabilité.</p>
+                    </div>
+                    <div class="job__mission">
+                        <p class="job__mission-title">Création d'un générateur de landing page</p>
+                        <p class="job__mission-tools">Python 3, Flask, Beautiful soup, JS</p>
+                        <p class="job__mission-description">Le rôle de l'application est de généré des landing page
+                            automatiquement connectées à nos API. L'utilisateur peut choisir un thème, la liste des
+                            blocks de la page, les champs du formulaire. Il est également possible de créer des filtres
+                            dynamiques pour l'utilisateur permettant d'avoir des conditions d'affichages et de validités
+                            dans le formulaire.</p>
+                    </div>
+                    <div class="job__mission">
+                        <p class="job__mission-title">Création d'une plateforme d'API métier</p>
+                        <p class="job__mission-tools">PHP [7,8], Symfony [5,6], Mercure,
+                            RabbitMq, architecture héxagonale</p>
+                        <p class="job__mission-description">Centralisation de tous les traitements métiers dans une
+                            seule API. Toutes les applications y seront connectées au fil du temps.</p>
+                    </div>
+                    <div class="job__mission">
+                        <p class="job__mission-title">Déploiement et migration d'un CRM</p>
+                        <p class="job__mission-tools">PHP 7, Symfony 4</p>
+                        <p class="job__mission-description">Transfert et accompagnent de 50 agences vers un nouveau CRM.
+                            Migration des données de l'ancien CRM vers le nouveau avec un nouveau schéma.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__position">
+                    <h3 class="job__title">Développeur web <span class="job__date">octobre 2018 à août 2020</span></h3>
+                    <p class="job__company">Crédit Conseil de France, Rennes | Banque &amp; Assurance</p>
+                </div>
+                <div class="job__missions">
+                    <div class="job__mission">
+                        <p class="job__mission-title">Développement d'un nouveau CRM</p>
+                        <p class="job__mission-tools">PHP 7, Symfony 4, API plateform, JS,
+                            JQuery, architecture monolithique</p>
+                        <p class="job__mission-description">Création d'un nouveau CRM en remplacement de l'ancien.
+                            Création d'un nouveau modèle pour remplacer l'ancien schéma de BDD.</p>
+                    </div>
+                    <div class="job__mission">
+                        <p class="job__mission-title">Développement d'un outil de migration</p>
+                        <p class="job__mission-tools">PHP 7, Symfony 4</p>
+                        <p class="job__mission-description">Outil permettant de transférer les données de l'ancien
+                            modèle du CRM, vers le nouveau.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__position">
+                    <h3 class="job__title">Stagiare développeur web<span class="job__date">avril 2016 à juillet
+                            2016</span></h3>
+                    <p class="job__company">Data story, Vannes | Data visualisation</p>
+                </div>
+                <div class="job__missions">
+                    <div class="job__mission">
+                        <p class="job__mission-title">Développement d'un générateur de requêtes SQL</p>
+                        <p class="job__mission-tools">PHP, JS, SQL</p>
+                        <p class="job__mission-description">Fonctionnalité de l'application Web, permettant de se
+                            connecter aux bases de données des clients. Récupérer des données depuis un modèle en étoile
+                            ou en flocon, puis filtrer les données via une interface graphique.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job__position">
+                    <h3 class="job__title">Stagiare développeur logiciel<span class="job__date">janvier 2015 à février
+                            2015</span></h3>
+                    <p class="job__company">Data story, Vannes | Data visualisation</p>
+                </div>
+                <div class="job__missions">
+                    <div class="job__mission">
+                        <p class="job__mission-title">Développement d'un complément Excel</p>
+                        <p class="job__mission-tools">C#</p>
+                        <p class="job__mission-description">Complément Excel permettant de sélectionner un tableau de
+                            données, le transformer en graphique et le transférer à l'application Web.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education" class="education">
+            <h2 class="education__title">Parcours scolaire</h2>
+            <div class="education__container">
+                <div class="education__school">
+                    <p class="education__schoolname">Politechnika - Warszawska</p>
+                    <p class="education__date">février 2017 à juin 2017</p>
+                    <p class="education__description">Master 1 - Erasmus</p>
+                </div>
+                <div class="education__school">
+                    <p class="education__schoolname">ESAIP - Angers</p>
+                    <p class="education__date">septembre 2016 à janvier 2017</p>
+                    <p class="education__description">Master 1 - Chef de projet international en informatique</p>
+                </div>
+                <div class="education__school">
+                    <p class="education__schoolname">IUT - Vannes</p>
+                    <p class="education__date">septembre 2015 à août 2016</p>
+                    <p class="education__description">Licence pro - Conception de solutions décisionnelles</p>
+                </div>
+                <div class="education__school">
+                    <p class="education__schoolname">Lycée de la Salle - Rennes</p>
+                    <p class="education__date">septembre 2013 à juin 2015</p>
+                    <p class="education__description">BTS - SIO, option SLAM</p>
+                </div>
+                <div class="education__school">
+                    <p class="education__schoolname">Lycée Sacré-Coeur - Saint-Brieuc</p>
+                    <p class="education__date">septembre 2010 à juin 2013</p>
+                    <p class="education__description">Bac pro - SEN, option TR</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="footer__network">
+            <li class="footer__network-item">
+                <a href="#" class="footer__link">Email</a>
+            </li>
+            <li class="footer__network-item">
+                <a href="#" class="footer__link">Linkedin</a>
+            </li>
+            <li class="footer__network-item">
+                <a href="#" class="footer__link">Github</a>
+            </li>
+        </ul>
+        <p class="footer__copyright">© Florian Malinge 2023</p>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

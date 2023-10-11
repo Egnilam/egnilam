@@ -1,0 +1,45 @@
+.education {
+    @include scroll-margin;
+    display: grid;
+    row-gap: 2.5rem;
+    padding: 2.5rem 0;
+    background-color: $secondary-color;
+    scroll-margin-block: 80px;
+
+    &__title {
+        padding: 0 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 0 1.5rem;
+    }
+
+    &__school {
+        width: calc(70vw - 2rem);
+        padding: 1rem;
+        border-radius: 8px;
+        background-color: $primary-color;
+    }
+
+    &__school:nth-child(even) {
+        align-self: flex-end;
+    }
+
+    &__schoolname {
+        margin-bottom: 0.2rem;
+    }
+    
+    &__date {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__description {
+        font-size: 0.9rem;
+        color: $accent-color;
+    }
+}

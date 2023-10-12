@@ -7,8 +7,8 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem;
-    background-color: $primary-color;
-    
+    background-color: #fff;
+
     &__link {
         z-index: 999;
     }
@@ -29,6 +29,13 @@
     }
 
     &__btn-img {
+        height: 24px;
+        width: 24px;
+        fill: black;
+    }
 
+    &--accent {
+        color: $accent-color;
+        fill: $accent-color;
     }
 }

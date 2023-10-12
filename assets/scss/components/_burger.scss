@@ -1,0 +1,52 @@
+.burger {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+
+    &__icon{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        height: 4px;
+        width: 30px;
+        background-color: black;
+        transition-duration: 0.5s;
+
+        &::before {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            height: 4px;
+            width: 30px;
+            background-color: black;
+            transition-duration: 0.5s;
+            content: "";
+        }
+
+        &::after {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            height: 4px;
+            width: 30px;
+            background-color: black;
+            transition-duration: 0.5s;
+            content: "";
+        }
+
+        &--open {
+            background-color: $accent-color;
+            &:before{
+                background-color: $accent-color;
+                transform: rotateZ(-45deg) scaleX(0.75) translate(-15px, 0);
+            }
+        
+            &:after{
+                background-color: $accent-color;
+                transform: rotateZ(45deg) scaleX(0.75) translate(-15px, 0);
+            }
+        }
+    }
+}

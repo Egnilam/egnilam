@@ -15,10 +15,12 @@
             <img class="header__logo" src="./assets/img/logo.svg" alt="Logo">
         </a>
         <button aria-label="navbar-toggle" class="header__btn" data-controller="navbar-toggle">
-            <svg class="header__btn-img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                style="fill: #D8B87D;transform: ;msFilter:;">
+            <!--<svg class="header__btn-img" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
-            </svg>
+            </svg>-->
+            <div  class="burger">
+                <span id="burger-icon" class="burger__icon"></span>
+            </div>
         </button>
         <nav id="navbar" class="navbar">
             <ul class="navbar__list">
@@ -58,7 +60,7 @@
                 <p class="about-me__text">Développons la culture métier/technique.</p>
             </div>
             <div class="about-me__photo-container">
-                <img class="about-me__photo" src="./assets/img/me.webp" alt="It's me !">
+                <img class="about-me__photo" fetchpriority="low" src="./assets/img/me.webp" alt="It's me !">
             </div>
         </section>
         <section id="experience" class="experience">

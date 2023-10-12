@@ -1,26 +1,18 @@
 const navbarBtn = document.querySelector('[data-controller="navbar-toggle"]');
+navbarBtn.addEventListener('click', () => toggleNavbar())
 
-navbarBtn.addEventListener('click', event => {
-    toggleNavbar();    
-})
+const navLinks = document.querySelectorAll('[data-nav]');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => toggleNavbar())
+});
 
 const toggleNavbar = () => {
     const navbar = document.getElementById('navbar');
     const body = document.querySelector('body');
+    const menuIcon = document.getElementById('burger-icon');
 
-    if(navbar.classList.contains('navbar--visible')){
-        navbar.classList.remove('navbar--visible');
-        body.classList.remove('body--no-scroll');
-    } else {
-        navbar.classList.add('navbar--visible');
-        body.classList.add('body--no-scroll');
-    }
+    navbar.classList.toggle('navbar--visible');
+    body.classList.toggle('body--no-scroll');
+    menuIcon.classList.toggle('burger__icon--open');
 }
 
-const navLinks = document.querySelectorAll('[data-nav]');
-
-navLinks.forEach(link => {
-    link.addEventListener('click', event => {
-        toggleNavbar();
-    })
-});

@@ -27,15 +27,4 @@
             display: none;
         }
     }
-
-    &__btn-img {
-        height: 24px;
-        width: 24px;
-        fill: black;
-    }
-
-    &--accent {
-        color: $accent-color;
-        fill: $accent-color;
-    }
 }

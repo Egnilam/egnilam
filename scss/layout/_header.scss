@@ -11,19 +11,38 @@
 
     &__link {
         z-index: 999;
+        display: inline-flex;
+        align-self: center;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: black;
+    }
+
+    &--accent {
+        color: $accent-color;
     }
 
     &__logo {
         height: 43px;
         width: 75px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
 
     &__btn {
         z-index: 999;
         background-color: transparent;
         border: none;
+    }
+}
 
-        @include sm {
+@include sm {
+    .header {
+        width: calc(100% - 2rem);
+
+        &__btn {
             display: none;
         }
     }

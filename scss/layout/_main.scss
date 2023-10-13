@@ -1,0 +1,9 @@
+.main {
+    grid-area: main;
+    background-color: $primary-color;
+
+    &--invisible {
+        pointer-events: none;
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,25 @@
+.experience {
+    @include scroll-margin;
+    display: grid;
+    row-gap: 2.5rem;
+    padding: 2.5rem 0;
+
+    &__title {
+        font-size: 1.5rem;
+        padding: 0 2.5rem;
+        text-align: center;
+    }
+}
+
+@include sm {
+    .experience {
+        row-gap: 0;
+        background-color: $accent-color;
+
+        &__title {
+            color: $secondary-color;
+            font-weight: 700;
+            padding-bottom: 2.5rem;
+        }
+    }
+}

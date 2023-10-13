@@ -17,7 +17,32 @@
     opacity: 0;     
     pointer-events: none;
 
-    @include sm {
+    &--visible {
+        visibility: visible;
+        opacity: 1;     
+        pointer-events: auto;
+        transition: opacity 0.3s, visibility 0.3s;
+    }
+
+    &__list {
+        line-height: 2.5;
+    }
+
+    &__link {
+        @include reset-link;
+        text-transform: capitalize;
+    }
+    
+    &__label {
+        letter-spacing: 0.15rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $accent-color;
+    }
+}
+
+@include sm {
+    .navbar {
         position: relative;
         top: inherit;
         left: auto;
@@ -30,42 +55,28 @@
         visibility: visible;
         opacity: 1;     
         pointer-events: auto;
-    }
+        background-color: #ffffff;
+        font-size: 1rem;
+        color: black;
 
-    &--visible {
-        visibility: visible;
-        opacity: 1;     
-        pointer-events: auto;
-        transition: opacity 0.3s, visibility 0.3s;
-    }
-
-    &__list {
-        line-height: 2.5;
-        @include sm {
+        &__list {
             display: inline-flex;
             align-items: center;
         }
-    }
 
-    &__link {
-        @include reset-link;
-        text-transform: capitalize;
-
-        @include sm {
+        &__link {
             padding: 0.5rem 1rem;
-        }
-    }
+            color: black;
 
-    &__contact {
-        @include sm {
+            &:hover {
+                border-radius: 50px;
+                background-color: $primary-color;
+                color: $accent-color;
+            }
+        }
+
+        &__contact {
             display: none;
         }
-    }
-    
-    &__label {
-        letter-spacing: 0.15rem;
-        font-weight: 600;
-        text-transform: uppercase;
-        color: $accent-color;
     }
 }

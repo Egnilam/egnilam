@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Florian Malinge backend developer">
     <title>Florian Malinge | Egnilam.fr</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <header class="header">
-        <a class="header__link" href="#">
-            <img class="header__logo" src="./assets/img/logo.svg" alt="Logo">
+        <a id="header-link" class="header__link" href="#">
+            Florian Malinge
         </a>
         <button aria-label="navbar-toggle" class="header__btn" data-controller="navbar-toggle">
             <div class="burger">
@@ -35,7 +35,7 @@
                 <span class="navbar__label">Me contacter</span>
                 <ul class="navbar__list">
                     <li class="navbar__item">
-                        <a class="navbar__link" href="mailto:malinge.florian@gmail.com">Email</a>
+                        <a class="navbar__link" href="mailto:malinge.florian@egnilam.fr">Email</a>
                     </li>
                     <li class="navbar__item">
                         <a class="navbar__link" href="https://www.linkedin.com/in/malingeflorian/"
@@ -48,7 +48,7 @@
             </div>
         </nav>
     </header>
-    <main class="main">
+    <main id="main" class="main">
         <section id="about-me" class="about-me">
             <h1 class="about-me__title">Backend <br> developer.</h1>
             <p class="about-me__guideline">J'intègre votre <span class="about-me--highlight">métier</span> dans vos
@@ -58,7 +58,7 @@
                 <p class="about-me__text">Développons la culture métier/technique.</p>
             </div>
             <div class="about-me__photo-container">
-                <img class="about-me__photo" fetchpriority="low" src="./assets/img/me.webp" alt="It's me !">
+                <img class="about-me__photo" fetchpriority="low" src="./img/me.webp" alt="It's me !">
             </div>
         </section>
         <section id="experience" class="experience">
@@ -190,21 +190,21 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer id="footer" class="footer">
         <ul class="footer__network">
             <li class="footer__network-item">
-                <a href="#" class="footer__link">Email</a>
+                <a class="footer__link" href="mailto:malinge.florian@egnilam.fr" >Email</a>
             </li>
             <li class="footer__network-item">
-                <a href="#" class="footer__link">Linkedin</a>
+                <a class="footer__link" href="https://www.linkedin.com/in/malingeflorian/" target="_blank">Linkedin</a>
             </li>
             <li class="footer__network-item">
-                <a href="#" class="footer__link">Github</a>
+                <a class="footer__link" href="https://github.com/Egnilam" target="_blank">Github</a>
             </li>
         </ul>
         <p class="footer__copyright">© Florian Malinge 2023</p>
     </footer>
-    <script src="./assets/js/app.js" defer></script>
+    <script src="./app.js" defer></script>
 </body>
 
 </html>

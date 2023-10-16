@@ -8,7 +8,7 @@
     "photo";
     row-gap: 2rem;
     padding-top: 2.5rem;
-    
+
     &--highlight {
         font-weight: 600;
         color: $accent-color;
@@ -56,5 +56,45 @@
         margin-left: auto;
         margin-right: auto;
         border-radius: 6px;
+    }
+}
+
+@include sm {
+    .about-me {
+        grid-template-areas:
+        "title photo"
+        "guideline photo"
+        "text photo";
+        grid-template-columns: 3fr 1fr;
+        column-gap: 0;
+        padding-top: 0;
+
+        &__title {
+            padding-top: 5rem;
+            padding-right: 8rem;
+        }
+
+        &__guideline {
+            padding-right: 8rem;
+        }
+
+        &__text-container {
+            padding-bottom: 2rem;
+            padding-right: 8rem;
+        }
+
+        &__photo-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            padding: 0;
+        }
+    
+        &__photo {
+            position: absolute;
+            left: -105px;
+            border-radius: 6px;
+        }
     }
 }

@@ -1,8 +1,12 @@
 .footer {
     grid-area: footer;
     padding: 2.5rem 2.5rem 1rem 2.5rem;
-
     background-color: $primary-color;
+
+    &--invisible {
+        pointer-events: none;
+        visibility: hidden;
+    }
 
     &__network {
         margin-bottom: 2.5rem;

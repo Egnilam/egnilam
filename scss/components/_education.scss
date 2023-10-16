@@ -20,7 +20,7 @@
     }
 
     &__school {
-        width: calc(70vw - 2rem);
+        width: 60%;
         padding: 1rem;
         border-radius: 8px;
         background-color: $primary-color;
@@ -42,5 +42,14 @@
     &__description {
         font-size: 0.9rem;
         color: $accent-color;
+    }
+}
+
+@include lg {
+    .education {
+        &__container {
+            justify-self: center;
+            width: 800px;
+        }
     }
 }

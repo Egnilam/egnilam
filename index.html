@@ -54,16 +54,35 @@
             <h1 class="about-me__title">Backend <br> developer.</h1>
             <p class="about-me__guideline">J'intègre votre <span class="about-me--highlight">métier</span> dans vos
                 applications.</p>
-            <div class="about-me__text-container">
-                <p class="about-me__text">Construisons ensemble une architecture logicielle solide.</p>
-                <p class="about-me__text">Développons la culture métier/technique.</p>
-            </div>
             <div class="about-me__photo-container">
                 <img class="about-me__photo" fetchpriority="low" src="./img/me.webp" alt="It's me !">
             </div>
         </section>
         <section id="experience" class="experience">
             <h2 class="experience__title">Mon expérience</h2>
+            <div class="job">
+                <div class="job__position">
+                    <h3 class="job__title">Développeur web <span class="job__date">janvier 2024 à aujourd'hui</span></h3>
+                    <p class="job__company">Simango, Rennes | Organisme de formation pour les professionnel de santé</p>
+                    <p class="job__description">Mon rôle est principalement technique avec un accompagnement lors des analyses métier.
+                        <br>Configuration de la partie OPS, des images Docker au déploiement automatisé avec Github Actions.
+                        <br>Création des schémas de base de données.
+                        <br>Définition et mise en place de l'architecture logicielle.
+                    </p>
+                </div>
+                <div class="job__missions">
+                    <div class="job__mission">
+                        <p class="job__mission-title">Développement d'une API pour les scénarios (serious game)</p>
+                        <p class="job__mission-tools">PHP 8.3, Symfony 7, FrankenPHP, caddy, architecture hexagonale</p>
+                        <p class="job__mission-description">Création d'une API permettant de recevoir les données de jeu des scénarios générés par l'éditeur.</p>
+                    </div>
+                    <div class="job__mission">
+                        <p class="job__mission-title">Développement d'une API pour un éditeur de scénarios Unity</p>
+                        <p class="job__mission-tools">PHP 8.3, Symfony 7, FrankenPHP, Caddy, architecture hexagonale</p>
+                        <p class="job__mission-description">Création de l'API pour enregister des scénarios (serious game) générés par un éditeur Unity interne.</p>
+                    </div>
+                </div>
+            </div>
             <div class="job">
                 <div class="job__position">
                     <h3 class="job__title">Lead développeur <span class="job__date">août 2020 à mai 2023</span></h3>
@@ -95,7 +114,7 @@
                     <div class="job__mission">
                         <p class="job__mission-title">Création d'une plateforme d'API métier</p>
                         <p class="job__mission-tools">PHP [7,8], Symfony [5,6], Mercure,
-                            RabbitMq, architecture héxagonale</p>
+                            RabbitMq, architecture hexagonale</p>
                         <p class="job__mission-description">Centralisation de tous les traitements métiers dans une
                             seule API. Toutes les applications y seront connectées au fil du temps.</p>
                     </div>

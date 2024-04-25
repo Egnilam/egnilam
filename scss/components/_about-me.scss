@@ -29,18 +29,6 @@
 
     }
 
-    &__text-container {
-        grid-area: text;
-        display: flex;
-        flex-direction: row;
-        margin-top: 2rem;
-        padding: 0 2.5rem;
-    }
-
-    &__text {
-        font-size: 0.7rem;
-    }
-
     &__photo-container {
         grid-area: photo;
         width: 100%;
